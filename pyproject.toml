@@ -8,9 +8,16 @@ dependencies = [
     "flax>=0.12.7",
     "jax>=0.11.0",
     "jaxlib>=0.11.0",
+    "marimo>=0.23.14",
     "matplotlib>=3.11.0",
     "numpy>=2.5.1",
     "optax>=0.2.8",
     "orbax-checkpoint>=0.12.1",
     "tqdm>=4.69.0",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.3.0",
+    "jupyter>=1.1.1",
 ]
