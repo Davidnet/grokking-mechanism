@@ -1,0 +1,26 @@
+[tools]
+node = "24"
+
+[tasks.web-install]
+description = "Install the browser application's npm dependencies"
+run = "npm install"
+dir = "web"
+
+[tasks.web-dev]
+description = "Start the Vite development server"
+run = "npm run dev"
+dir = "web"
+
+[tasks.web-test]
+description = "Run the browser application's unit tests"
+run = "npm run test"
+dir = "web"
+
+[tasks.web-build]
+description = "Typecheck and build the browser application"
+run = "npm run build"
+dir = "web"
+
+[tasks.python-check]
+description = "Compile the Python reference implementation"
+run = "uv run python -m compileall -q ."
